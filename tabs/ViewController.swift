@@ -13,15 +13,38 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     @IBOutlet weak var tbLugar: UITableView!
     
-    let lugares : [Lugar] 
+    let lugares : [Lugar] = [Lugar(nombre: "Cereso", descripcion: "Centro de reunión de gente importante", imagen: UIImage(named: "cereso")!),
+                             Lugar(nombre: "Cocorit", descripcion: "Dominguito familiar y baraton", imagen: UIImage(named: "cocorit")!),
+                             Lugar(nombre: "Laguna", descripcion: "Pasea a tu perro en armonía con la naturaleza pura del lugar", imagen: UIImage(named: "laguna")!),
+                             Lugar(nombre: "Presa", descripcion: "Lugar para llevar a la morrita", imagen: UIImage(named: "presa")!),
+                             Lugar(nombre: "Lugar", descripcion: "Casa de estudios de jovenes universitarios que no usan camión", imagen: UIImage(named: "ulsa")!)]
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return lugares.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let celda = tableView.dequeueReusableCell(withIdentifier: "tableCell") as! TableCell
+        
+        celda.lblNombreLugar.text = lugares[indexPath.row].nombre
+        
+        return celda
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 90
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "goToDetalleLugar"
+        {
+            let destino = segue.destination as? PlaceDetail
+            destino?.lugar = lugares[(tbLugar.indexPathForSelectedRow?.row)!]
+           
+            
+        }
     }
     
 
