@@ -64,7 +64,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="100.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cocorit" translatesAutoresizingMaskIntoConstraints="NO" id="h2B-FN-G6e">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h2B-FN-G6e">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="100.5"/>
                                                 </imageView>
                                                 <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Ho-li-ENO">
@@ -96,6 +96,7 @@
                                         <connections>
                                             <outlet property="imageViewCelda" destination="h2B-FN-G6e" id="C42-Ac-zxX"/>
                                             <outlet property="lblNombreLugar" destination="619-O7-bRe" id="ZoD-eA-yuZ"/>
+                                            <segue destination="9kf-GL-tPR" kind="show" id="ega-3T-Nts"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -117,7 +118,6 @@
                     <navigationItem key="navigationItem" id="0UP-jF-I54"/>
                     <connections>
                         <outlet property="tbLugar" destination="vhk-Gp-wiA" id="X5r-9r-DI2"/>
-                        <segue destination="9kf-GL-tPR" kind="show" identifier="goToDetalleLugar" id="y8A-59-XUi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="28S-Tu-yfB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -167,7 +167,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cocorit" width="960" height="385"/>
         <image name="ubi" width="9" height="9"/>
     </resources>
 </document>

@@ -9,14 +9,13 @@
 import Foundation
 import UIKit
 
-class PlaceDetail: UIViewController
-{
+class PlaceDetail: UIViewController {
     
     
     @IBOutlet weak var imageViewLugar: UIImageView!
     @IBOutlet weak var lblDescripcion: UILabel!
     
-    var lugar: Lugar?
+    var lugar: Lugar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,16 +24,21 @@ class PlaceDetail: UIViewController
         
         if let lugarActual = lugar
         {
-            self.title = lugar?.nombre
+            self.title = lugarActual.nombre
             
-            if let descripcion = lugar?.descripcion
+            if let descripcion = lugarActual.descripcion
             {
                 lblDescripcion.text = descripcion
+            }else{
+                lblDescripcion.text = "-"
             }
             
-            if let imagen = lugar?.imagen
+            
+            if let imagen = lugarActual.imagen
             {
                 imageViewLugar.image = imagen
+            }else{
+                imageViewLugar.image = nil
             }
             
             

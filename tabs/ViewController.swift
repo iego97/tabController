@@ -25,9 +25,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let celda = tableView.dequeueReusableCell(withIdentifier: "tableCell") as! TableCell
         
         celda.lblNombreLugar.text = lugares[indexPath.row].nombre
+        celda.imageViewCelda.image = lugares[indexPath.row].imagen
         
         return celda
     }
@@ -40,8 +42,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         if segue.identifier == "goToDetalleLugar"
         {
-            let destino = segue.destination as? PlaceDetail
-            destino?.lugar = lugares[(tbLugar.indexPathForSelectedRow?.row)!]
+            let destino = segue.destination as! PlaceDetail
+            destino.lugar = lugares[(tbLugar.indexPathForSelectedRow?.row)!]
            
             
         }
@@ -50,7 +52,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.title = "Sitios Turísticos"
+
     }
 
     override func didReceiveMemoryWarning() {
