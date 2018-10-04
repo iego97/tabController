@@ -17,6 +17,8 @@
 		3D96851F215B0700007409C8 /* tabsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D96851E215B0700007409C8 /* tabsUITests.swift */; };
 		3D96852E215B1849007409C8 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D96852D215B1849007409C8 /* TableCell.swift */; };
 		3D968530215B1E27007409C8 /* Lugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D96852F215B1E27007409C8 /* Lugar.swift */; };
+		3DCEB4092166B1BA006DB3CB /* Platillo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCEB4082166B1BA006DB3CB /* Platillo.swift */; };
+		3DCEB40B2166B265006DB3CB /* Comentario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCEB40A2166B265006DB3CB /* Comentario.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		3D968520215B0700007409C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D96852D215B1849007409C8 /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
 		3D96852F215B1E27007409C8 /* Lugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lugar.swift; sourceTree = "<group>"; };
+		3DCEB4082166B1BA006DB3CB /* Platillo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platillo.swift; sourceTree = "<group>"; };
+		3DCEB40A2166B265006DB3CB /* Comentario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comentario.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D094D8D2166AAFC00954015 /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D968500215B06FD007409C8 /* ViewController.swift */,
+				3D93BF1E215D72B90093B91D /* PlaceDetail.swift */,
+				3D96852D215B1849007409C8 /* TableCell.swift */,
+			);
+			path = viewControllers;
+			sourceTree = "<group>";
+		};
+		3D094D8E2166AB3A00954015 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				3D96852F215B1E27007409C8 /* Lugar.swift */,
+				3DCEB4082166B1BA006DB3CB /* Platillo.swift */,
+				3DCEB40A2166B265006DB3CB /* Comentario.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
 		3D9684F2215B06FD007409C8 = {
 			isa = PBXGroup;
 			children = (
@@ -103,15 +127,11 @@
 		3D9684FD215B06FD007409C8 /* tabs */ = {
 			isa = PBXGroup;
 			children = (
-				3D9684FE215B06FD007409C8 /* AppDelegate.swift */,
-				3D968500215B06FD007409C8 /* ViewController.swift */,
-				3D93BF1E215D72B90093B91D /* PlaceDetail.swift */,
-				3D968502215B06FD007409C8 /* Main.storyboard */,
-				3D96852F215B1E27007409C8 /* Lugar.swift */,
+				3DCEB4072166AE10006DB3CB /* app */,
+				3D094D8D2166AAFC00954015 /* viewControllers */,
+				3DCEB4062166ACAB006DB3CB /* views */,
+				3D094D8E2166AB3A00954015 /* models */,
 				3D968505215B06FF007409C8 /* Assets.xcassets */,
-				3D968507215B06FF007409C8 /* LaunchScreen.storyboard */,
-				3D96850A215B06FF007409C8 /* Info.plist */,
-				3D96852D215B1849007409C8 /* TableCell.swift */,
 			);
 			path = tabs;
 			sourceTree = "<group>";
@@ -132,6 +152,24 @@
 				3D968520215B0700007409C8 /* Info.plist */,
 			);
 			path = tabsUITests;
+			sourceTree = "<group>";
+		};
+		3DCEB4062166ACAB006DB3CB /* views */ = {
+			isa = PBXGroup;
+			children = (
+				3D968502215B06FD007409C8 /* Main.storyboard */,
+				3D968507215B06FF007409C8 /* LaunchScreen.storyboard */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		3DCEB4072166AE10006DB3CB /* app */ = {
+			isa = PBXGroup;
+			children = (
+				3D96850A215B06FF007409C8 /* Info.plist */,
+				3D9684FE215B06FD007409C8 /* AppDelegate.swift */,
+			);
+			name = app;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +305,8 @@
 			files = (
 				3D93BF1F215D72B90093B91D /* PlaceDetail.swift in Sources */,
 				3D96852E215B1849007409C8 /* TableCell.swift in Sources */,
+				3DCEB40B2166B265006DB3CB /* Comentario.swift in Sources */,
+				3DCEB4092166B1BA006DB3CB /* Platillo.swift in Sources */,
 				3D968530215B1E27007409C8 /* Lugar.swift in Sources */,
 				3D968501215B06FD007409C8 /* ViewController.swift in Sources */,
 				3D9684FF215B06FD007409C8 /* AppDelegate.swift in Sources */,

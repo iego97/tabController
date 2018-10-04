@@ -15,15 +15,15 @@ class PlaceDetail: UIViewController {
     @IBOutlet weak var imageViewLugar: UIImageView!
     @IBOutlet weak var lblDescripcion: UILabel!
     
-    var lugar: Lugar!
+    var lugar: Lugar?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
         
-        if let lugarActual = lugar
-        {
+        if let lugarActual = lugar{
+            
             self.title = lugarActual.nombre
             
             if let descripcion = lugarActual.descripcion
@@ -37,7 +37,9 @@ class PlaceDetail: UIViewController {
             if let imagen = lugarActual.imagen
             {
                 imageViewLugar.image = imagen
+                
             }else{
+                
                 imageViewLugar.image = nil
             }
             
