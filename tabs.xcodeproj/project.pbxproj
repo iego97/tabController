@@ -17,6 +17,13 @@
 		3D96851F215B0700007409C8 /* tabsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D96851E215B0700007409C8 /* tabsUITests.swift */; };
 		3D96852E215B1849007409C8 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D96852D215B1849007409C8 /* TableCell.swift */; };
 		3D968530215B1E27007409C8 /* Lugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D96852F215B1E27007409C8 /* Lugar.swift */; };
+		3D9E43E8216D682D0099C7F7 /* Datos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9E43E7216D682D0099C7F7 /* Datos.swift */; };
+		3D9E43EA216D76770099C7F7 /* DetallePlatilloController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9E43E9216D76770099C7F7 /* DetallePlatilloController.swift */; };
+		3D9E43EC216D768A0099C7F7 /* CeldaComentario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9E43EB216D768A0099C7F7 /* CeldaComentario.swift */; };
+		3D9E43EE216D76A80099C7F7 /* ListaComentariosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9E43ED216D76A80099C7F7 /* ListaComentariosController.swift */; };
+		3D9E43F0216D76BA0099C7F7 /* AgregarComentario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9E43EF216D76BA0099C7F7 /* AgregarComentario.swift */; };
+		3D9E43F6216D776D0099C7F7 /* ViewControllerComida.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9E43F5216D776D0099C7F7 /* ViewControllerComida.swift */; };
+		3D9E43F8216D7A120099C7F7 /* CeldaPlatillo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9E43F7216D7A120099C7F7 /* CeldaPlatillo.swift */; };
 		3DCEB4092166B1BA006DB3CB /* Platillo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCEB4082166B1BA006DB3CB /* Platillo.swift */; };
 		3DCEB40B2166B265006DB3CB /* Comentario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCEB40A2166B265006DB3CB /* Comentario.swift */; };
 /* End PBXBuildFile section */
@@ -55,6 +62,13 @@
 		3D968520215B0700007409C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D96852D215B1849007409C8 /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
 		3D96852F215B1E27007409C8 /* Lugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lugar.swift; sourceTree = "<group>"; };
+		3D9E43E7216D682D0099C7F7 /* Datos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datos.swift; sourceTree = "<group>"; };
+		3D9E43E9216D76770099C7F7 /* DetallePlatilloController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallePlatilloController.swift; sourceTree = "<group>"; };
+		3D9E43EB216D768A0099C7F7 /* CeldaComentario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaComentario.swift; sourceTree = "<group>"; };
+		3D9E43ED216D76A80099C7F7 /* ListaComentariosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaComentariosController.swift; sourceTree = "<group>"; };
+		3D9E43EF216D76BA0099C7F7 /* AgregarComentario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgregarComentario.swift; sourceTree = "<group>"; };
+		3D9E43F5216D776D0099C7F7 /* ViewControllerComida.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerComida.swift; sourceTree = "<group>"; };
+		3D9E43F7216D7A120099C7F7 /* CeldaPlatillo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaPlatillo.swift; sourceTree = "<group>"; };
 		3DCEB4082166B1BA006DB3CB /* Platillo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platillo.swift; sourceTree = "<group>"; };
 		3DCEB40A2166B265006DB3CB /* Comentario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comentario.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +104,12 @@
 				3D968500215B06FD007409C8 /* ViewController.swift */,
 				3D93BF1E215D72B90093B91D /* PlaceDetail.swift */,
 				3D96852D215B1849007409C8 /* TableCell.swift */,
+				3D9E43E9216D76770099C7F7 /* DetallePlatilloController.swift */,
+				3D9E43EB216D768A0099C7F7 /* CeldaComentario.swift */,
+				3D9E43ED216D76A80099C7F7 /* ListaComentariosController.swift */,
+				3D9E43EF216D76BA0099C7F7 /* AgregarComentario.swift */,
+				3D9E43F5216D776D0099C7F7 /* ViewControllerComida.swift */,
+				3D9E43F7216D7A120099C7F7 /* CeldaPlatillo.swift */,
 			);
 			path = viewControllers;
 			sourceTree = "<group>";
@@ -100,6 +120,7 @@
 				3D96852F215B1E27007409C8 /* Lugar.swift */,
 				3DCEB4082166B1BA006DB3CB /* Platillo.swift */,
 				3DCEB40A2166B265006DB3CB /* Comentario.swift */,
+				3D9E43E7216D682D0099C7F7 /* Datos.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -303,12 +324,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D9E43F6216D776D0099C7F7 /* ViewControllerComida.swift in Sources */,
 				3D93BF1F215D72B90093B91D /* PlaceDetail.swift in Sources */,
+				3D9E43E8216D682D0099C7F7 /* Datos.swift in Sources */,
+				3D9E43EC216D768A0099C7F7 /* CeldaComentario.swift in Sources */,
 				3D96852E215B1849007409C8 /* TableCell.swift in Sources */,
+				3D9E43F0216D76BA0099C7F7 /* AgregarComentario.swift in Sources */,
 				3DCEB40B2166B265006DB3CB /* Comentario.swift in Sources */,
 				3DCEB4092166B1BA006DB3CB /* Platillo.swift in Sources */,
+				3D9E43F8216D7A120099C7F7 /* CeldaPlatillo.swift in Sources */,
+				3D9E43EE216D76A80099C7F7 /* ListaComentariosController.swift in Sources */,
 				3D968530215B1E27007409C8 /* Lugar.swift in Sources */,
 				3D968501215B06FD007409C8 /* ViewController.swift in Sources */,
+				3D9E43EA216D76770099C7F7 /* DetallePlatilloController.swift in Sources */,
 				3D9684FF215B06FD007409C8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
